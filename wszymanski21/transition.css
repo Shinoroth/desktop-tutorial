@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/*  SECTION #1 TRANSITIONS */
+img[class="img1"]:hover { 
+    -webkit-transform: translate(100px, 100px);
+    -moz-transform: translate(100px, 100px);
+    -ms-transform: translate(100px, 100px);
+    -o-transform: translate(100px, 100px);
+    transform: translate(100px, 100px);
+}
+
+img[class="img2"] { 
+    -webkit-transition: all 2s; 
+    -moz-transition: all 2s; 
+    -ms-transition: all 2s; 
+    -o-transition: all 2s; 
+    transition: all 2s; 
+}
+img[class="img2"]:hover { 
+    -webkit-transform: rotate(45deg); 
+    -moz-transform: rotate(45deg); 
+    -ms-transform: rotate(45deg); 
+    -o-transform: rotate(45deg); 
+    transform: rotate(45deg); 
+}
+
+img[class="img3"] { 
+    -webkit-transition: all 2s ease-in; 
+    -moz-transition: all 2s ease-in; 
+    -ms-transition: all 2s ease-in; 
+    -o-transition: all 2s ease-in; 
+    transition: all 2s ease-in; 
+}
+img[class="img3"]:hover { 
+    -webkit-transform: scale(.75); 
+    -moz-transform: scale(.75); 
+    -ms-transform: scale(.75); 
+    -o-transform: scale(.75); 
+    transform: scale(.75); 
+}
+
+img[class="img4"] { 
+    -webkit-transition: all 2s ease-out 1s; 
+    -moz-transition: all 2s ease-out 1s; 
+    -ms-transition: all 2s ease-out 1s; 
+    -o-transition: all 2s ease-out 1s; 
+    transition: all 2s ease-out 1s; 
+}
+img[class="img4"]:hover { 
+    -webkit-transform: skew(30deg, 30deg);
+    -moz-transform: skew(30deg, 30deg);
+    -ms-transform: skew(30deg, 30deg);
+    -o-transform: skew(30deg, 30deg);
+    transform: skew(30deg, 30deg);
+}
+
+/* SECTION 2 TRANSITIONS */
+img[class="img5"]:hover { width: 800px; }
+
+img[class="img6"]:hover { height: 600px; }
+
+img[class="img7"] { 
+    -webkit-transition: all 2s steps(5) 1s; 
+    -moz-transition: all 2s steps(5) 1s; 
+    -ms-transition: all 2s steps(5) 1s; 
+    -o-transition: all 2s steps(5) 1s;
+    transition: all 2s steps(5) 1s; 
+}
+img[class="img7"]:hover {
+    aspect-ratio: 1/1; 
+    height: 100px; 
+    width: 100px; 
+}
+
+img[class="img8"] {
+    -webkit-transition: all 1s ease-in-out 1s;
+    -moz-transition: all 1s ease-in-out 1s;
+    -ms-transition: all 1s ease-in-out 1s;
+    -o-transition: all 1s ease-in-out 1s;
+    transition: all 1s ease-in-out 1s;
+}
+
+img[class="img8"]:hover {
+    aspect-ratio: 2/5;
+    height: 500px;
+    width: 200px;
+}
+
+/* SECTION 3 TRANSITIONS */
+img[class="img9"] { position: relative; }
+img[class="img9"]:hover {
+    -webkit-transform: translate(150px, 150px);
+    -moz-transform: translate(150px, 150px);
+    -ms-transform: translate(150px, 150px);
+    -o-transform: translate(150px, 150px);
+    transform: translate(150px, 150px);
+}
+
+img[class="img10"] { position: relative; }
+img[class="img10"]:hover {
+    -webkit-transform: translate(-250px, 250px);
+    -moz-transform: translate(-250px, 250px);
+    -ms-transform: translate(-250px, 250px);
+    -o-transform: translate(-250px, 250px);
+    transform: translate(-250px, 250px);
+}
+
+img[class="img11"] { position: relative; }
+img[class="img11"]:hover {
+    -webkit-transform: translate(400px, -200px);
+    -moz-transform: translate(400px, -200px);
+    -ms-transform: translate(400px, -200px);
+    -o-transform: translate(400px, -200px);
+    transform: translate(400px, -200px);
+}
+
+img[class="img12"] { position: relative; }
+img[class="img12"]:hover {
+    -webkit-transform: translate(-300px, -250px);
+    -moz-transform: translate(-300px, -250px);
+    -ms-transform: translate(-300px, -250px);
+    -o-transform: translate(-300px, -250px);
+    transform: translate(-300px, -250px);
+}
+
+/* SECTION 4 TRANSITIONS */
+div[class^="div"] {
+    height: 250px;
+    width: 500px;
+}
+
+div[class="div1"] {
+    -webkit-transition: all 500ms ease 1s;
+    -moz-transition: all 500ms ease 1s;
+    -ms-transition: all 500ms ease 1s;
+    -o-transition: all 500ms ease 1s;
+    transition: all 500ms ease 1s;
+    background-color: var(--cyan);
+}
+div[class="div1"]:hover { border: 5px solid var(--red);}
+
+div[class="div2"] {
+    -webkit-transition: all 5s ease-in-out;
+    -moz-transition: all 5s ease-in-out;
+    -ms-transition: all 5s ease-in-out;
+    -o-transition: all 5s ease-in-out;
+    transition: all 5s ease-in-out;
+    background-color: var(--magenta);
+}
+div[class="div2"]:hover { background-color: var(--cyan);}
+
+div[class="div3"] {
+    -webkit-transition: all 2.5s linear;
+    -moz-transition: all 2.5s linear;
+    -ms-transition: all 2.5s linear;
+    -o-transition: all 2.5s linear;
+    transition: all 2.5s linear;
+    background-color: var(--yellow);
+}
+div[class="div3"]:hover {
+    background-image: url(gfx/samochody3.jpg);
+    border: 10px double var(--blue);
+}
+
+div[class="div4"] {
+    -webkit-transition: all 5s steps(5) 2s;
+    -moz-transition: all 5s steps(5) 2s;
+    -ms-transition: all 5s steps(5) 2s;
+    -o-transition: all 5s steps(5) 2s;
+    transition: all 5s steps(5) 2s;
+    background-color: var(--black);
+}
+div[class="div4"]:hover { opacity: .25;}
